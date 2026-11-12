@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="L'Écritoire: biblioteca parisiense de empréstimo de livros online. Escolha uma obra, reserve seu exemplar e receba o silêncio das palavras em casa.">
+  <meta name="theme-color" content="#5E2A2B">
+  <title>L'Écritoire — Biblioteca e Empréstimo Literário em Paris</title>
+  <link rel="icon" href="img/icone-livro.png" type="image/png">
+  <!-- Tipografia: Lora (títulos literários) + Poppins (leitura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="#topo">
+        <img src="img/logo-claro.png" alt="" width="48" height="32">
+        <span>L'Écritoire</span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#acervo">Acervo</a></li>
+          <li><a href="#colecoes">Coleções</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="botao botao-contorno" href="#">Carte de lecteur</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO com busca -->
+    <section class="hero">
+      <div class="hero-fundo"></div>
+      <div class="container">
+        <div class="hero-texto">
+          <span class="hero-tag">Bibliothèque · Quartier Latin, Paris</span>
+          <h1>Há livros que nos esperam em silêncio até que tenhamos coragem de abri-los</h1>
+          <p>Do refúgio das nossas estantes parisienses diretamente para as suas mãos. Escolha uma obra do acervo, reserve o empréstimo online e deixe a leitura acontecer sem pressa.</p>
+
+          <form class="busca" action="#" method="get" role="search">
+            <label class="campo">
+              <span>Título ou autor</span>
+              <input type="text" name="busca" placeholder="Ex: Clarice Lispector, Camus...">
+            </label>
+            <label class="campo">
+              <span>Coleção</span>
+              <select name="colecao">
+                <option>Todo o acervo</option>
+                <option>Romances Clássicos</option>
+                <option>Poesia &amp; Crônicas</option>
+                <option>Filosofia &amp; Ensaios</option>
+                <option>Literatura Francesa</option>
+                <option>Edições Raras</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Retirada prevista</span>
+              <input type="date" name="data">
+            </label>
+            <button class="botao" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="beneficios">
+      <div class="container">
+        <ul class="lista-beneficios">
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-livro.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Reserva sem pressa</strong>
+              <p>Escolha o exemplar online e garanta seu empréstimo por 21 dias.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-chave.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Retirada ou envio em Paris</strong>
+              <p>Busque no balcão de madeira ou receba no seu endereço na cidade.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-ampulheta.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Renovação gentil</strong>
+              <p>Ainda não terminou o último capítulo? Estenda o prazo com um clique.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COLEÇÕES -->
+    <section id="colecoes" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Explore por coleção</h2>
+          <p>Cada estante guarda uma atmosfera diferente para o seu momento.</p>
+        </div>
+        <ul class="grade-categorias">
+          <li><a class="categoria" href="#acervo"><img src="img/cat-romances.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Romances</span></a></li>
+          <li><a class="categoria" href="#acervo"><img src="img/cat-poesia.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Poesia</span></a></li>
+          <li><a class="categoria" href="#acervo"><img src="img/cat-filosofia.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Filosofia</span></a></li>
+          <li><a class="categoria" href="#acervo"><img src="img/cat-francesa.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Littérature</span></a></li>
+          <li><a class="categoria" href="#acervo"><img src="img/cat-cronicas.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Crônicas</span></a></li>
+          <li><a class="categoria" href="#acervo"><img src="img/cat-raros.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Edições Raras</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE EMPRÉSTIMO -->
+    <section id="acervo" class="secao secao-branca">
+      <div class="container">
+        <div class="eventos-topo">
+          <div class="titulo-secao">
+            <h2>Acervo para empréstimo</h2>
+            <p>Obras disponíveis hoje e títulos que logo retornam às prateleiras.</p>
+          </div>
+          <ul class="filtros">
+            <li><a class="ativo" href="#acervo">Todos</a></li>
+            <li><a href="#acervo">Romances</a></li>
+            <li><a href="#acervo">Poesia</a></li>
+            <li><a href="#acervo">Filosofia</a></li>
+            <li><a href="#acervo">Littérature</a></li>
+          </ul>
+        </div>
+
+        <div class="grade-eventos">
+
+          <!-- LIVRO 1: Disponível -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/livro-agua-viva.jpeg" alt="Edição encadernada de Água Viva sobre mesa de madeira" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1973</strong><span>ANO</span></div>
+              <span class="selo">Último exemplar</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Romance · Língua Portuguesa</p>
+                <h3>Água Viva</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Clarice Lispector</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Estante B · Prateleira 04</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>prazo de leitura</span> 21 dias</p>
+                <a class="botao" href="#" aria-label="Solicitar empréstimo: Água Viva">Emprestar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LIVRO 2: Disponível -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/livro-estrangeiro.jpeg" alt="Capa clássica francesa de L'Étranger" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1942</strong><span>ANO</span></div>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Littérature · Edição Bilíngue</p>
+                <h3>O Estrangeiro (L'Étranger)</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Albert Camus</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Estante A · Prateleira 02</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>prazo de leitura</span> 21 dias</p>
+                <a class="botao" href="#" aria-label="Solicitar empréstimo: O Estrangeiro">Emprestar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LIVRO 3: Esgotado / Emprestado (usa a classe .esgotado do professor!) -->
+          <article class="card esgotado">
+            <div class="card-imagem">
+              <img src="img/livro-hora-estrela.jpeg" alt="Exemplar de A Hora da Estrela junto a uma xícara de café" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1977</strong><span>ANO</span></div>
+              <span class="selo selo-esgotado">Emprestado</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Romance · Língua Portuguesa</p>
+                <h3>A Hora da Estrela</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Clarice Lispector</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Retorno previsto · 24 Nov</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco preco-esgotado"><span>exemplares</span> Esgotado</p>
+                <a class="botao botao-secundario" href="#" aria-label="Entrar na fila de espera: A Hora da Estrela">Avise-me</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LIVRO 4: Disponível -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/livro-flores-mal.jpeg" alt="Volume antigo de Les Fleurs du Mal" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1857</strong><span>ANO</span></div>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Poesia · Francês / Português</p>
+                <h3>As Flores do Mal</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Charles Baudelaire</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Estante C · Prateleira 01</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>prazo de leitura</span> 21 dias</p>
+                <a class="botao" href="#" aria-label="Solicitar empréstimo: As Flores do Mal">Emprestar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LIVRO 5: Esgotado / Emprestado -->
+          <article class="card esgotado">
+            <div class="card-imagem">
+              <img src="img/livro-segundo-sexo.jpeg" alt="Edição de O Segundo Sexo sobre poltrona de leitura" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1949</strong><span>ANO</span></div>
+              <span class="selo selo-esgotado">Emprestado</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Filosofia · Ensaio</p>
+                <h3>O Segundo Sexo (Vol. I)</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Simone de Beauvoir</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Retorno previsto · 29 Nov</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco preco-esgotado"><span>exemplares</span> Esgotado</p>
+                <a class="botao botao-secundario" href="#" aria-label="Entrar na fila de espera: O Segundo Sexo">Avise-me</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LIVRO 6: Disponível -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/livro-tempo-perdido.jpeg" alt="Volume encadernado de No Caminho de Swann" width="1200" height="896" loading="lazy">
+              <div class="data"><strong>1913</strong><span>ANO</span></div>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Romance · Clássico Parisiense</p>
+                <h3>No Caminho de Swann</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-pena.png" alt="" width="18" height="18"> Marcel Proust</li>
+                  <li><img src="img/ico-estante.png" alt="" width="18" height="18"> Estante A · Prateleira 07</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>prazo de leitura</span> 30 dias</p>
+                <a class="botao" href="#" aria-label="Solicitar empréstimo: No Caminho de Swann">Emprestar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OBRA EM DESTAQUE -->
+    <section class="destaque">
+      <div class="container">
+        <div class="destaque-box">
+          <div class="destaque-imagem"></div>
+          <div class="destaque-info">
+            <span class="hero-tag">Coup de cœur · Leitura do mês</span>
+            <h2>La Passion selon G.H.</h2>
+            <p>Uma travessia íntima sobre o instante em que a rotina se desfaz e resta apenas o essencial. Nossa edição especial bilíngue acaba de retornar à estante principal.</p>
+            <ul class="meta meta-claro">
+              <li><img src="img/ico-pena-claro.png" alt="" width="18" height="18"> Clarice Lispector · Tradução francesa</li>
+              <li><img src="img/ico-estante-claro.png" alt="" width="18" height="18"> Salão Principal · 2 exemplares disponíveis</li>
+            </ul>
+            <div class="destaque-acoes">
+              <p class="preco"><span>empréstimo gratuito</span> 21 dias</p>
+              <a class="botao" href="#" aria-label="Reservar empréstimo: La Passion selon G.H.">Reservar obra</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="secao secao-branca">
+      <div class="container">
+        <div class="titulo-secao titulo-centro">
+          <h2>Como funciona o empréstimo</h2>
+          <p>Três gestos simples entre o desejo de ler e a primeira página.</p>
+        </div>
+        <ol class="passos">
+          <li>
+            <span class="passo-numero">1</span>
+            <h3>Escolha sua leitura</h3>
+            <p>Percorra o catálogo online e veja quais obras repousam nas estantes ou aguardam devolução.</p>
+          </li>
+          <li>
+            <span class="passo-numero">2</span>
+            <h3>Reserve com sua carte</h3>
+            <p>Informe seu cadastro de leitor e escolha entre retirar na biblioteca ou receber em casa.</p>
+          </li>
+          <li>
+            <span class="passo-numero">3</span>
+            <h3>Leia no seu tempo</h3>
+            <p>Desfrute do livro por até 21 dias e devolva quando a história já tiver feito morada em você.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <div>
+          <h2>Cartas da L'Écritoire</h2>
+          <p>Receba avisos quando novos títulos chegarem às prateleiras ou voltarem de empréstimo.</p>
+        </div>
+        <form class="form-newsletter" action="#" method="post">
+          <input type="email" name="email" placeholder="Seu endereço de e-mail" aria-label="Seu e-mail" required>
+          <button class="botao botao-secundario" type="submit">Assinar cartas</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <p class="rodape-marca">
+            <img src="img/logo-claro.png" alt="" width="48" height="32">
+            <span>L'Écritoire</span>
+          </p>
+          <p>Uma biblioteca de refúgio no coração de Paris, dedicada ao encontro silencioso entre leitores e palavras que permanecem.</p>
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Goodreads</a></li>
+            <li><a href="#">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Acervo</h3>
+          <ul>
+            <li><a href="#acervo">Romances</a></li>
+            <li><a href="#acervo">Poesia</a></li>
+            <li><a href="#acervo">Filosofia</a></li>
+            <li><a href="#acervo">Edições Raras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Biblioteca</h3>
+          <ul>
+            <li><a href="#como-funciona">Regras de empréstimo</a></li>
+            <li><a href="#">Carte de lecteur</a></li>
+            <li><a href="#">Doação de obras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Endereço</h3>
+          <address>
+            <p>14 Rue des Rosiers, 75004 Paris</p>
+            <p><a href="mailto:bonjour@lecritoire.paris">bonjour@lecritoire.paris</a></p>
+            <p>Terça a domingo, das 10h às 20h</p>
+          </address>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <p>L'Écritoire — Projeto literário fictício criado para fins didáticos.</p>
+        <ul class="links-legais">
+          <li><a href="#">Regulamento</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#topo">Voltar ao topo</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
